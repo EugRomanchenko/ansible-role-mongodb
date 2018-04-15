@@ -4,8 +4,8 @@ python:
 install:
 - pip install ansible==2.5.0 molecule apache-libcloud pycrypto
 script:
-- molecule --debug create
-- molecule --debug converge
+- molecule create
+- molecule converge
 - molecule verify
 after_script:
 - molecule destroy
